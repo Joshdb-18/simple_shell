@@ -59,12 +59,13 @@ The shell returns a value of 0 if the command is valid and the command is execut
 - wait4 (man 2 wait4)
 - write (man 2 write)
 
-0. Betty would be proud
-mandatory
+```
+### 0. Betty would be proud
+***mandatory***
 Write a beautiful code that passes the Betty checks
 
-1. Simple shell 0.1
-mandatory
+### 1. Simple shell 0.1
+***mandatory***
 Write a UNIX command line interpreter.
 
 Usage: simple_shell
@@ -86,29 +87,28 @@ be able to move the cursor
 handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
 
-3. Simple shell 0.3
-mandatory
+### 3. Simple shell 0.3
+***mandatory***
 Simple shell 0.2 +
 
 Handle the PATH
 fork must not be called if the command doesn’t exist
 
-4. Simple shell 0.4
-mandatory
+### 4. Simple shell 0.4
+***mandatory***
 Simple shell 0.3 +
 
 Implement the exit built-in, that exits the shell
 Usage: exit
 You don’t have to handle any argument to the built-in exit
 
-5. Simple shell 1.0
-mandatory
+### 5. Simple shell 1.0
+***mandatory***
 Simple shell 0.4 +
 
 Implement the env built-in, that prints the current environment
 
 ***end of mandatory***
-....
 
 ## Contributors :two_men_holding_hands:
 ****Oluwafemi Damilola Joshua****
