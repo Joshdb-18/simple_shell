@@ -1,3 +1,5 @@
+/** Second group project **/
+
 # SIMPLE UNIX SHELL :shell:
 
 ## Description :page_with_curl:
