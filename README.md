@@ -121,7 +121,7 @@ handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
 
 ### 3. Simple shell 0.3
-***mandatory***
+****mandatory****
 
 Simple shell 0.2 +
 
@@ -138,15 +138,16 @@ Usage: exit
 You don’t have to handle any argument to the built-in exit
 
 ### 5. Simple shell 1.0
-***mandatory***
+****mandatory****
 
 Simple shell 0.4 +
 
 Implement the env built-in, that prints the current environment
 
-***end of mandatory***
+****end of mandatory****
 
-## Contributors :two_men_holding_hands:
+## Contributors :two_peers_holding_hands:
+
 ****Oluwafemi Damilola Joshua****
 
 ****Renish Okago****
