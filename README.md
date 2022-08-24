@@ -60,6 +60,6 @@ The shell returns a value of 0 if the command is valid and the command is execut
 ```
 
 ## Contributors :two_men_holding_hands:
-Oluwafemi Damilola Joshua
-Renish Okago
+****Oluwafemi Damilola Joshua****
+****Renish Okago****
 
