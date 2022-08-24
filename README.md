@@ -1,5 +1,3 @@
-/** Second group project **/
-
 # SIMPLE UNIX SHELL :shell:
 
 ## Description :page_with_curl:
@@ -60,6 +58,39 @@ The shell returns a value of 0 if the command is valid and the command is execut
 - write (man 2 write)
 
 ```
+## Compilation
+The shell will be compiled this way:
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
+
+## Testing
+The shell works like this in interactive mode:
+
+```
+$ ./hsh
+ ($) /bin/ls
+ hsh main.c shell.c
+ ($)
+ ($) exit
+$
+
+```
+But also in non-interactive mode:
+
+```
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+ /bin/ls
+ /bin/ls
+$
+$ cat test_ls_2 | ./hsh
+ hsh main.c shell.c test_ls_2
+ hsh main.c shell.c test_ls_2
+$
+```
+## Tasks
+
 ### 0. Betty would be proud
 ***mandatory***
 
@@ -84,7 +115,7 @@ You don’t have to:
 
 use the PATH
 implement built-ins
-handle special characters : `", ', `, \, *, &, #`
+handle special characters : ``", ', `, \, *, &, #``
 be able to move the cursor
 handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
