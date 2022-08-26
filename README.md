@@ -146,7 +146,7 @@ Implement the env built-in, that prints the current environment
 
 ****end of mandatory****
 
-## Contributors :two_men_holding_hands:
+## Contributors :couple:
 
 ****Oluwafemi Damilola Joshua****
 
