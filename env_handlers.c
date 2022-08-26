@@ -13,7 +13,6 @@ void create_envi(char **envi)
 		envi[i] = _strdup(environ[i]);
 	envi[i] = NULL;
 }
-
 /**
  * free_env - Frees the memory of the created Enviroment Variables array
  * @env:  Array of Environment variables
