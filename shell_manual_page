@@ -36,6 +36,7 @@ document.
 A space or tab.
 .TP
 .B word
+
 A sequence of characters considered as a single unit by the shell.
 .TP
 .B name
@@ -52,6 +53,7 @@ following symbols:
 
 .SH SHELL GRAMMAR
 .SS Simple Commands
+
 A
 .I simple command
 is a sequence of
