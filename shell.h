@@ -117,9 +117,21 @@ int handle_builtin(char **cmd, int st);
 void exit_bul(char **cmd, char *input, char **argv, int c,
 		int stat);
 int change_dir(char **cmd, __attribute__((unused))int st);
+/**
+ * dis_env - dis_env
+ * @cmd: command
+ * @st: integer parameter
+ * Return: integer depending on its result
+ */
 int dis_env(__attribute__((unused)) char **cmd,
 		__attribute__((unused)) int st);
 int echo_bul(char **cmd, int st);
+/**
+ * history_dis - history
+ * @c: char pointer
+ * @st: integer parameter
+ * Return: int value
+ */
 int history_dis(__attribute__((unused))char **c,
 		__attribute__((unused))int st);
 
