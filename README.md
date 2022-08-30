@@ -203,7 +203,7 @@ Implement the builtin command ``cd``:
 ***
 ``man chdir``, ``man getcwd``
 
-### 11. ;
+### 11. ``;``
 
 Simple shell 1.0 +
 ***
@@ -230,7 +230,7 @@ alex@~$
 
 Simple shell 1.0 +
 ***
-- Handle the && and || shell logical operators
+- Handle the ``&&`` and ``||`` shell logical operators
 ***
 ```
 alex@~$ ls /var && ls /var
