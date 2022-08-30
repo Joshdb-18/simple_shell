@@ -153,16 +153,14 @@ Simple shell 0.1 +
 ***
 You don't have to:
 
-***
 - be able to move the cursor
-***
 
 ### 7. Simple shell 0.2.1
 
 Simple shell 0.2 +
-***
+
 - You are not allowed to use ``strtok``
-***
+
 ### 8. Simple shell 0.4.1
 Simple shell 0.4 +
 ***
@@ -191,6 +189,7 @@ Implement the ``setenv`` and ``unsetenv`` builtin commands
 	- Command syntax: ``unsetenv VARIABLE``
 	- Should print something on stderr on failure
 ***
+
 ### 10. cd
 Simple sell 1.0 +
 
@@ -226,14 +225,14 @@ ls: cannot access /hbtn: No such file or directory
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
 alex@~$
-
+```
 ### 12. && and ||
 
 Simple shell 1.0 +
 ***
--Handle the && and || shell logical operators
+- Handle the && and || shell logical operators
 ***
-...
+```
 alex@~$ ls /var && ls /var
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
@@ -266,27 +265,27 @@ ls: cannot access /hbtn: No such file or directory
 ls: cannot access /hbtn: No such file or directory
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
 alex@~$
-
+```
 ### 13. alias
 
 Simple shell 1.0 +
-
-Implement the alias builtin command
-Usage: alias [name[='value'] ...]
-alias: Prints a list of all aliases, one per line, in the form name='value'
-alias name [name2 ...]: Prints the aliases name, name2, etc 1 per line, in the form name='value'
-alias name='value' [...]: Defines an alias for each name whose value is given. If name is already an alias, replaces its value with value
-...
+***
+- Implement the alias builtin command
+- Usage: ``alias [name[='value'] ...]``
+	- ``alias``: Prints a list of all aliases, one per line, in the form ``name='value'``
+	- ``alias name [name2 ...]``: Prints the aliases ``name``, ``name2``, etc 1 per line, in the form ``name='value'``
+	- ``alias name='value' [...]``: Defines an alias for each ``name`` whose ``value`` is given. If ``name`` is already an alias, replaces its value with ``value``
+***
 
 ### 14. Variables
 
 Simple shell 1.0 +
-
-Handle variables replacement
-Handle the $? variable
-Handle the $$ variable
-...
-
+***
+- Handle variables replacement
+- Handle the ``$?`` variable
+- Handle the ``$$`` variable
+***
+```
 julien@ubuntu:~/shell$ ./hsh
 $ ls /var
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  snap  spool  tmp
@@ -298,33 +297,31 @@ $ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 $ exit 
 julien@ubuntu:~/shell$ 
-...
+```
 
 ### 15. Comments
 
 Simple shell 1.0 +
 
-Handle comments (#)
-...
-
+Handle comments (``#``)
+```
 julien@ubuntu:~/shell$ sh
 $ echo $$ # ls -la
 5114
 $ exit
 julien@ubuntu:~/shell$ 
-...
+```
 
 ### 16. File as input
 
 Simple shell 1.0 +
-
-Usage: simple_shell [filename]
-Your shell can take a file as a command line argument
-The file contains all the commands that your shell should run before exiting
-The file should contain one command per line
-In this mode, the shell should not print a prompt and should not read from stdin
-
-```
+***
+- Usage: ``simple_shell [filename]``
+- Your shell can take a file as a command line argument
+- The file contains all the commands that your shell should run before exiting
+- The file should contain one command per line
+- In this mode, the shell should not print a prompt and should not read from stdin
+***
 ## Contributors :couple:
 
 ****Oluwafemi Damilola Joshua****
