@@ -89,15 +89,13 @@ $ cat test_ls_2 | ./hsh
  hsh main.c shell.c test_ls_2
 $
 ```
-## Tasks
+## Mandatory Tasks
 
 ### 0. Betty would be proud
-***mandatory***
 
 Write a beautiful code that passes the Betty checks
 
 ### 1. Simple shell 0.1
-***mandatory***
 
 Write a UNIX command line interpreter.
 
@@ -121,7 +119,6 @@ handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
 
 ### 3. Simple shell 0.3
-****mandatory****
 
 Simple shell 0.2 +
 
@@ -129,7 +126,6 @@ Handle the PATH
 fork must not be called if the command doesn’t exist
 
 ### 4. Simple shell 0.4
-***mandatory***
 
 Simple shell 0.3 +
 
@@ -138,14 +134,99 @@ Usage: exit
 You don’t have to handle any argument to the built-in exit
 
 ### 5. Simple shell 1.0
-****mandatory****
 
 Simple shell 0.4 +
 
 Implement the env built-in, that prints the current environment
 
 ****end of mandatory****
+## Advanced Tasks
 
+### 6. Simple shell 0.1.1
+
+Simple shell 0.1 +
+```
+- Write your own ``getline`` function
+- Use a buffer to read many chars at once and call the least possible the read system call
+- You will need to use ``static`` variables
+- You are not allowed to use ``getline``
+```
+You don't have to:
+
+```
+- be able to move the cursor
+```
+
+### 7. Simple shell 0.2.1
+
+Simple shell 0.2 +
+```
+- You are not allowed to use ``strtok``
+```
+### 8. Simple shell 0.4.1
+Simple shell 0.4 +
+***
+- handles arguments for a built-in ``exit``
+- Usage: ``exit status``, where ``status`` is an integer used to exit the shell
+***
+```
+julien@ubuntu:~/shell$ ./shell_0.4.1
+$ exit 98
+julien@ubuntu:~/shell$ echo $?
+98
+julien@ubuntu:~/shell$
+
+```
+### 9. setenv, unsetenv
+Simple shell 1.0 +
+
+Implement the ``setenv`` and ``unsetenv`` builtin commands
+```
+- ``setenv``
+	- initialize a new environment variable, or modify an existing one
+	- Command syntax: ``setenv VARIABLE VALUE``
+	- Should print something on stderr on failure
+- ``unsetenv``
+	- Remove an environment variable
+	- Command syntax: ``unsetenv VARIABLE``
+	- Should print something on stderr on failure
+```
+### 10. cd
+Simple sell 1.0 +
+
+Implement the builtin command ``cd``:
+```
+- Changes the current directory of the process
+- Command syntax: ``cd [DIRECTORY]``
+- If no argument is given to ``cd`` the command must be interpreted like ``cd $HOME``
+- You have to handle the command ``cd -``
+- You have to update the environment variable ``PWD`` when you change directory
+```
+``man chdir``, ``man getcwd``
+
+### 11. ;
+
+Simple shell 1.0 +
+***
+- Handle the commands separator ;
+***
+```
+alex@~$ ls /var ; ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /hbtn ; ls /var
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$ ls /var ; ls /hbtn
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+ls: cannot access /hbtn: No such file or directory
+alex@~$ ls /var ; ls /hbtn ; ls /var ; ls /var
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+ls: cannot access /hbtn: No such file or directory
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
+alex@~$
+```
 ## Contributors :couple:
 
 ****Oluwafemi Damilola Joshua****
