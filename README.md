@@ -207,7 +207,7 @@ Implement the builtin command ``cd``:
 
 Simple shell 1.0 +
 ***
-- Handle the commands separator ;
+- Handle the commands separator ``;``
 ***
 ```
 alex@~$ ls /var ; ls /var
@@ -226,7 +226,7 @@ backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tm
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
 alex@~$
 ```
-### 12. && and ||
+### 12. ``&&`` and ``||``
 
 Simple shell 1.0 +
 ***
